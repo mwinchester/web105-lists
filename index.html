@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lists</title>
+    
+    <style>
+        body {
+            background-color: #212121;
+            font-family: arial, helvetica, sans-serif;
+            color: #212121;
+        }
+
+        dt {
+            font-weight: bold;
+            color: #00796B;
+            line-height: 2;
+        }
+
+        
+        ul li {
+            list-style-type: circle;
+        }
+
+        ul  li  ul li {
+            list-style-type: square;
+        }
+
+        .container {
+            min-height: 100px;
+            max-width: 960px;
+            background-color: #ffffff;;
+            border-radius: 5%;
+            border: 6px solid #009688;
+            margin: 15px auto;
+            padding: 5px 10px 10px 15px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #00796B;
+        }
+    </style>
+
+</head>
+
+<body>
+<div class="container">
+    <h2>Unordered list</h2>
+    <ul>
+
+        <li>item 1</li>
+        <li>item 2
+            <ul>
+                <li>sub item 1</li>
+                <li>sub item 2</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="container">
+    <h2>Ordered list</h2>
+    <ol type="A">
+
+        <li>item 1</li>
+        <li>item 2
+            <ol type="i">
+                <li>sub item 1</li>
+                <li>sub item 2</li>
+            </ol>
+        </li>
+    </ol>
+
+</div>
+<div class="container">
+    <h2> Description List</h2>
+    <dl>
+        <dt>Browser</dt>
+        <dd>Lets you view web pages</dd>
+        <dt>Search Engine</dt>
+        <dd>helps you find things on the web</dd>
+    </dl>
+
+</div>
+</body>
+
+</html>
